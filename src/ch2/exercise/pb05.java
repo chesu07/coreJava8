@@ -5,21 +5,20 @@ import java.util.HashMap;
 public class pb05 {
 	public static void main(String[] args) {
 
-		HashMap rslPointer = null;
-		Point p = new Point(10, -10);
+		Point p = new Point(3, 4);
 
 		System.out.println("1. ÃÊ±â ÁÂÇ¥: (" + p.getX() + "," + p.getY() + ")");
 
-		p.translate(5, 5);
+		p.translate(1, 3);
 		System.out.println("2. translate() ÀÌÈÄ ÁÂÇ¥: (" + p.getX() + "," + p.getY() + ")");
 
-		rslPointer = p.scale(10);
-		System.out.println("3. scale() ÀÌÈÄ ÁÂÇ¥: (" + rslPointer.get("x") + "," + rslPointer.get("y") + ")");
+		p.scale(0.5);
+		System.out.println("3. scale() ÀÌÈÄ ÁÂÇ¥: (" + p.getX() + "," + p.getY() + ")");
 	}
 
 	private static class Point {
-		private int x;
-		private int y;
+		private double x;
+		private double y;
 
 		Point() {
 			this.x = 0;
@@ -31,32 +30,22 @@ public class pb05 {
 			this.y = paramY;
 		}
 
-		int getX() {
+		double getX() {
 			return this.x;
 		}
 
-		int getY() {
+		double getY() {
 			return this.y;
 		}
 
-		void translate(int paramX, int paramY) {
-			this.x = x + paramX; // System.out.println("x: " + x);
-			this.y = y + paramY; // System.out.println("x: " + y);
+		void translate(double paramX, double paramY) {
+			this.x = x + paramX; 
+			this.y = y + paramY; 
 		}
 
-		HashMap scale(double rate) {
-			HashMap scaleList = new HashMap<>();
-
-			int scaleX = getX();
-			int scaleY = getY();
-
-			double resultX = scaleX + (scaleX * (rate / 100.0));
-			double resultY = scaleY + (scaleY * (rate / 100.0));
-
-			scaleList.put("x", resultX);
-			scaleList.put("y", resultY);
-
-			return scaleList;
+		void scale(double rate) {			
+			this.x = x * rate;
+			this.y = y * rate;
 		}
 	}
 }
