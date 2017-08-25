@@ -1,26 +1,28 @@
 package ch2.exercise;
 
 import java.util.HashMap;
-
+/*
+ *  연습문제 5번을 반복하되 이번에는 translate와 scale을 변경자로 만들라.
+ */
 public class pb06 {
 	public static void main(String[] args) {
 
 		HashMap rslPointer = null;
-		Point p = new Point(10, -10);
+		Point p = new Point(3, 4);
 
 		System.out.println("1. 초기 좌표: (" + p.getX() + "," + p.getY() + ")");
 
-		p.translate(5, 5);
+		p.translate(1, 3);
 		System.out.println("2. translate() 이후 좌표: (" + p.getX() + "," + p.getY() + ")");
 
-		rslPointer = p.scale(10);
+		rslPointer = p.scale(0.5);
 		System.out.println("3. scale() 이후 좌표: (" + rslPointer.get("x") + "," + rslPointer.get("y") + ")");
 
 	}
 
 	private static class Point {
-		private int x;
-		private int y;
+		private double x;
+		private double y;
 		HashMap scaleList = new HashMap<>();
 
 		Point() {
@@ -33,11 +35,11 @@ public class pb06 {
 			this.y = paramY;
 		}
 
-		int getX() {
+		double getX() {
 			return this.x;
 		}
 
-		int getY() {
+		double getY() {
 			return this.y;
 		}
 
@@ -47,11 +49,8 @@ public class pb06 {
 		}
 
 		HashMap scale(double rate) {
-			int scaleX = getX();
-			int scaleY = getY();
-
-			double resultX = scaleX + (scaleX * (rate / 100.0));
-			double resultY = scaleY + (scaleY * (rate / 100.0));
+			double resultX = x * rate;
+			double resultY = y * rate;
 
 			scaleList.put("x", resultX);
 			scaleList.put("y", resultY);

@@ -3,7 +3,7 @@ package ch2.exercise;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 
-public class pb01 { 
+public class pb01 {
 	public static void main(String[] args) {
 
 		LocalDate date = LocalDate.now().withDayOfMonth(1); // System.out.println("date:"+date);
