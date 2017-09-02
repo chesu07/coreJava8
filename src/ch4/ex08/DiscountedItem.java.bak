@@ -27,6 +27,7 @@ public class DiscountedItem extends Item{
 	}
 
 	public void setDiscount(DiscountedItem other){
-		other.price = other.price * (1-ratio);
+		DiscountedItem others = other;
+		others.price = others.price * (1-ratio);
 	}
 }
