@@ -17,11 +17,11 @@ public class LabeledPoint extends Point{
 	}
 	
 	public double getX(){
-		return this.x; 
+		return super.getPointX(); 
 	}
 	
 	public double getY(){
-		return this.y; 
+		return super.getPointY();  
 	}
 	
 	public void setLabel(String label){	 	
