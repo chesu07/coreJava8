@@ -1,4 +1,4 @@
-package ex08;
+package ex06;
 
 import java.util.Objects;
 
