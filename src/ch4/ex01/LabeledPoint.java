@@ -6,9 +6,9 @@ public class LabeledPoint extends Point{
 	private double y;
 	
 	public LabeledPoint(String label, double x, double y){		
+		super(x,y);
 		this.label = label;
-		this.x = x;
-		this.y = y;
+		
 	}
 	
 	public String getLabel(){

@@ -1,20 +1,14 @@
-package ex03;
+﻿package ex03;
 
 public class LabeledPoint extends Point{
 	private String label;
 	private double x;
 	private double y;
 	
-	public LabeledPoint(){	 	
-		this.label = "";
-		this.x = 0;
-		this.y = 0;
-	}
-	
+		
 	public LabeledPoint(String label, double x, double y){		
+		super(x,y);
 		this.label = label;
-		this.x = x;
-		this.y = y;
 	}
 	
 	private String getLabel(){
