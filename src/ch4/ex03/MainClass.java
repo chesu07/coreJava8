@@ -1,10 +1,10 @@
-package ex03;
+package ch4.ex03;
 
 public class MainClass {
 	public static void main(String[] args) {		
 		LabeledPoint lp = new LabeledPoint();
 		
-		//LabeledPoint í´ë˜ìŠ¤ ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜ì— ëŒ€í•´ private ì œì–´ì ë³€ê²½ í›„ ì™¸ë¶€ í´ë˜ìŠ¤ì—ì„œëŠ” ì ‘ê·¼ì´ ì•ˆëœë‹¤.
+		//LabeledPoint ?´?˜?Š¤ ?¸?Š¤?„´?Š¤ ë³??ˆ˜?— ???•´ private ? œ?–´? ë³?ê²? ?›„ ?™¸ë¶? ?´?˜?Š¤?—?„œ?Š” ? ‘ê·¼ì´ ?•ˆ?œ?‹¤.
 		System.out.println(lp.getX);
 		System.out.println(lp.getY);
 		System.out.println(lp.getLabel);		

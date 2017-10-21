@@ -1,4 +1,4 @@
-package ex05;
+package ch4.ex05;
 
 public abstract class Shape implements Cloneable{	
 	private double dx;

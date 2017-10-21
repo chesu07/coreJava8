@@ -1,4 +1,4 @@
-package ex05;
+package ch4.ex05;
 
 public class Circle extends Shape {
 	private double radius;	
@@ -8,12 +8,12 @@ public class Circle extends Shape {
 		super.setPoint(center);
 	}
 	
-	//ì›ì˜ ë„“ì´
+	//?›?˜ ?„“?´
 	public double getCircleArea(){
 		return this.radius * this.radius * 3.14;
 	}
 	
-	//ê²°ê³¼ê°’
+	//ê²°ê³¼ê°?
 	@Override
 	public Point getCenter(){		
 		return super.getPoint();

@@ -1,4 +1,4 @@
-package ex02;
+package ch4.ex02;
 
 import java.util.Objects;
 

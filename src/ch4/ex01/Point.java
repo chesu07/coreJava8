@@ -1,4 +1,4 @@
-package ex01;
+package ch4.ex01;
 
 public class Point {
 	

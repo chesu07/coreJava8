@@ -1,4 +1,4 @@
-package ex07;
+package ch4.ex07;
 
 public enum eList {
 	

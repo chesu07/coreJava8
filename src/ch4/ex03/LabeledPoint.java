@@ -1,4 +1,4 @@
-﻿package ex03;
+﻿package ch4.ex03;
 
 public class LabeledPoint extends Point{
 	private String label;

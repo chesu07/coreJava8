@@ -1,4 +1,4 @@
-package ex05;
+package ch4.ex05;
 
 public class Line extends Shape {
 

@@ -1,4 +1,4 @@
-package ex04;
+package ch4.ex04;
 
 public class Point {
 	private double x;
